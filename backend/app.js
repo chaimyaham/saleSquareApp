@@ -10,12 +10,12 @@ const path = require("path");
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-    origin: 'https://sale-square-app.vercel.app/',
+    origin: 'https://salesquare-app.vercel.app',
     credentials:true,
 }));
 app.use("/", express.static(path.join(__dirname,"./uploads")));
 
-app.use("/",(req,res)=>{
+app.use("/test",(req,res)=>{
     res.send("hello world!");
 })
 
