@@ -10,7 +10,7 @@ const path = require("path");
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: 'https://sale-square-app.vercel.app/',
     credentials:true,
 }));
 app.use("/", express.static(path.join(__dirname,"./uploads")));
