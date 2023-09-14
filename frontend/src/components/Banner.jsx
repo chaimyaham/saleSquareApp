@@ -14,11 +14,11 @@ const Banner = () => {
         className={`Banner relative min-h-[70vh] 800px:min-h-[80vh] w-full bg-no-repeat ${styles.noramlFlex}`}
       
       >
-        <div className={`${styles.section} w-[90%] 800px:w-[60%]`}>
+        <div className={`${styles.section} w-[80%] `}>
           <h1
-            className={`text-[35px] leading-[1.2] 800px:text-[60px] text-[#f4f0f0] font-[600] capitalize`}
+            className={`text-[25px] leading-[1.2] 1100px:text-[50px] text-[#f4f0f0] font-[600] capitalize`}
           >
-          "Discover the Perfect Deals  <br /> at saleSquare!"
+          "Discover the Perfect Deals  <br />  at saleSquare!"
           </h1>
           <p className="pt-5 text-[14px] 800px:text-[16px] font-[Poppins] font-[400] text-[#ffffff]">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae,

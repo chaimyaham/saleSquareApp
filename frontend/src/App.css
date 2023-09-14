@@ -23,7 +23,7 @@
   }
   .product-title{
     @apply
-    font-semibold text-2xl overflow-ellipsis  whitespace-nowrap capitalize
+    font-semibold text-lg overflow-ellipsis  whitespace-nowrap capitalize
   }
   .discount-percent{
     @apply bg-[#149BC2] px-1.5 py-0.5 rounded-md text-xs text-white 
