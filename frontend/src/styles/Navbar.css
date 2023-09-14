@@ -18,11 +18,15 @@ nav{
  
    
 }
+
+nav img{
+    width: min(100px,25%);
+}
 nav button{
     font-family: var(--font-family-abril);
     background-color: inherit;
     border: none;
-    font-size: 1.3rem;
+    font-size: min(1.3rem,25vw);
     cursor: pointer;
     outline: none;
 

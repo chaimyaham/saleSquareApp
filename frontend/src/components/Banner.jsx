@@ -28,14 +28,14 @@ const Banner = () => {
         <div className='flex'>
         <Link to={`${isSeller ? "/dashboard" : "/shop-create"}`}className="inline-block">
               <div className={`${styles.button} mt-5  hover:bg-[#1682AE] hover:text-white duration-300 cursor-pointer`}>
-                   <span className="text-[#131313] font-[Poppins] text-[18px]">
+                   <span className="text-[#131313] font-[Poppins] text-[14px]">
                    {isSeller ? "Go Dashboard" : "Become Seller"}{" "}
                    </span>
               </div>
           </Link>
           <Link to="/products" className="inline-block">
               <div className={`${styles.button} mt-5 ml-3 hover:bg-black text-[#131313] hover:text-white duration-300 cursor-pointer`}>
-                   <span className=" text-[18px]">
+                   <span className=" text-[14px]">
                       Discover our products
                    </span>
               </div>
