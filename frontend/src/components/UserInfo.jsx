@@ -61,7 +61,7 @@ const UserInfo = () => {
               <div className="relative cursor-pointer mr-[15px]">
                 {isAuthenticated ? (
                   <Link to="/profile">
-                     <span className='flex justify-center items-center gap-2'>welcome, {user?.name} <img
+                     <span className='flex justify-center items-center gap-2'>Hi, {user?.name} <img
                       src={`${backend_url}${user?.avatar}`}
                       className="w-[35px] h-[35px] rounded-full"
                       alt=""

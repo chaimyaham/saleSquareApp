@@ -5,7 +5,7 @@ import axios from 'axios';
 import { toast } from 'react-toastify';
 import { AiOutlineEye, AiOutlineEyeInvisible } from 'react-icons/ai';
 import "../../styles/login.css";
-import bgShop from '../../images/bg2.png'
+import bgShop from '../../images/bg2.jpg'
 import UserInfo from '../UserInfo';
 
 const ShopLoginPageComponent = () => {

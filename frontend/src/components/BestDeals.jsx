@@ -31,7 +31,7 @@ const BestDeals = () => {
     <div className='bestDealSection  mt-10'>
         <div className='text-center'>
         <h5 className='text-gray-500 ' > our products</h5>
-        <h1 className='text-4xl w-96 mx-auto leading-normal font-bold mb-12 whitespace-pre align-middle '>Best Selling Products</h1>
+        <h1 className=' sm:text-2xl md:text-3xl mx-auto leading-normal font-bold mb-12 whitespace-pre align-middle '>Best Selling Products</h1>
         </div>
         <div     className="flex flex-grow flex-wrap justify-center gap-5">
            {

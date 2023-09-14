@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Marcellus&family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+:root {
+    --font-family-abril: "Abril Fatface", cursive;
+    --font-family-marcellus: "Marcellus", serif;
+    --font-family-poppins: "Poppins", sans-serif;
+  }
+
+
 nav{
 
     display: flex;
@@ -85,7 +94,7 @@ position: relative;
 }
 .hamburger-menu .menu-layer .wrapper .menu-links nav ul li{
   list-style: none;
-  font-size: 4.5rem;
+  font-size: min(9vw,4.5rem);
   font-family: var(--font-family-poppins);
   font-weight: 700;
   cursor: pointer;
@@ -102,6 +111,7 @@ position: relative;
 }
 .hamburger-menu .menu-layer .wrapper .menu-links nav ul li a:hover{
    color: #101010;
+   
    
  
 }
@@ -184,3 +194,4 @@ margin-left: 54px;
     }
 
 }
+

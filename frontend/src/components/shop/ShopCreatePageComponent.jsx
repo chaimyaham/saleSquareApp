@@ -6,7 +6,7 @@ import { RxAvatar } from "react-icons/rx";
 import axios from "axios"; 
 import {server}from "../../server.js"
 import { toast } from "react-toastify";
-import bgShop from '../../images/bg2.png'
+import bgShop from '../../images/bg2.jpg'
 import '../../styles/signUp.css';
 
 const ShopCreatePageComponent = () => {

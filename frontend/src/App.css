@@ -1,8 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Marcellus&family=Poppins:wght@400;500;600;700;800;900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Marcellus&family=Poppins:wght@400;500;600;700;800;900&display=swap");
+:root {
+  --font-family-abril: "Abril Fatface", cursive;
+  --font-family-marcellus: "Marcellus", serif;
+  --font-family-poppins: "Poppins", sans-serif;
+}
 
 * {
   margin: 0;
@@ -55,7 +60,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("./images/bg2.png");
+  background-image: url("./images/bg2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -69,7 +74,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("./images/bg3.png");
+  background-image: url("./images/bg3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -97,6 +102,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .Banner{
-  background-image: url("./images/bg2.png");
+  background-image: url("./images/bg2.jpg");
   background-size: cover;
 }
+
+

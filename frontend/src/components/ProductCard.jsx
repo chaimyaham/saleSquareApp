@@ -79,7 +79,7 @@ const ProductCard = ({ data,isEvent }) => {
 
 
           {/* product title */}
-          <h2 className="product-title " title="best headphone ever"> {data.name.length > 40 ? data.name.slice(0, 40) + "..." : data.name}</h2>
+          <h3 className="product-title " title="best headphone ever"> {data.name.length > 40 ? data.name.slice(0,35) + "..." : data.name}</h3>
 
           {/* product price */}
           <div>

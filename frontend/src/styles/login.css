@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Marcellus&family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+:root {
+    --font-family-abril: "Abril Fatface", cursive;
+    --font-family-marcellus: "Marcellus", serif;
+    --font-family-poppins: "Poppins", sans-serif;
+  }
+
+
 .loginContainer{
         border-radius: 16px;
         box-shadow: 0 4px 30px #4747470b;
