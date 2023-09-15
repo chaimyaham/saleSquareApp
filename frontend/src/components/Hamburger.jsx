@@ -30,6 +30,7 @@ const Hamburger = ({ state }) => {
       .get(`${server}/user/logout`, { withCredentials: true })
       .then((res) => {
         toast.success(res.data.message);
+        console.log('here')
         window.location.reload(true);
         navigate("/login");
       })

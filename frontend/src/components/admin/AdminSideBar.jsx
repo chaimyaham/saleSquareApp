@@ -45,7 +45,7 @@ const AdminSideBar = ({ active}) => {
     .then((res) => {
       toast.success(res.data.message);
       window.location.reload(true);
-      console.log("refreshing")
+     
       navigate("/");
     })
     .catch((error) => {
