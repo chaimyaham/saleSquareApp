@@ -50,9 +50,6 @@ const UserInbox = () => {
           `${server}/conversation/get-all-conversation-user/${user?._id}`,
           {
             withCredentials: true,
-            headers: {
-              "Access-Control-Allow-Credentials": "https://sale-square-app.vercel.app/",
-            },
           }
         );
 

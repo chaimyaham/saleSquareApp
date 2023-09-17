@@ -54,11 +54,8 @@ export const getAllOrdersOfAdmin = () => async (dispatch) => {
       type: "adminAllOrdersRequest",
     });
 
-    const { data } = await axios.get(`${server}/order/admin-all-orders`,     {
+    const { data } = await axios.get(`${server}/order/admin-all-orders`, {
       withCredentials: true,
-      headers: {
-        "Access-Control-Allow-Credentials": "https://sale-square-app.vercel.app/",
-      },
     });
 
     dispatch({

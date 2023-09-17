@@ -7,11 +7,8 @@ export const loadUser = () => async (dispatch) => {
     dispatch({
       type: "LoadUserRequest",
     });
-    const { data } = await axios.get(`${server}/user/getuser`,    {
+    const { data } = await axios.get(`${server}/user/getuser`, {
       withCredentials: true,
-      headers: {
-        "Access-Control-Allow-Credentials": "https://sale-square-app.vercel.app/",
-      },
     });
     dispatch({
       type: "LoadUserSuccess",
@@ -31,11 +28,8 @@ export const loadSeller = () => async (dispatch) => {
     dispatch({
       type: "LoadSellerRequest",
     });
-    const { data } = await axios.get(`${server}/shop/getSeller`,    {
+    const { data } = await axios.get(`${server}/shop/getSeller`, {
       withCredentials: true,
-      headers: {
-        "Access-Control-Allow-Credentials": "https://sale-square-app.vercel.app/",
-      },
     });
     dispatch({
       type: "LoadSellerSuccess",
@@ -104,12 +98,7 @@ export const updatUserAddress =
           zipCode,
           addressType,
         },
-        {
-          withCredentials: true,
-          headers: {
-            "Access-Control-Allow-Credentials": "https://sale-square-app.vercel.app/",
-          },
-        }
+        { withCredentials: true }
       );
 
       dispatch({
@@ -136,12 +125,7 @@ export const deleteUserAddress = (id) => async (dispatch) => {
 
     const { data } = await axios.delete(
       `${server}/user/delete-user-address/${id}`,
-      {
-        withCredentials: true,
-        headers: {
-          "Access-Control-Allow-Credentials": "https://sale-square-app.vercel.app/",
-        },
-      }
+      { withCredentials: true }
     );
 
     dispatch({
@@ -166,11 +150,8 @@ export const getAllUsers = () => async (dispatch) => {
       type: "getAllUsersRequest",
     });
 
-    const { data } = await axios.get(`${server}/user/admin-all-users`,{
+    const { data } = await axios.get(`${server}/user/admin-all-users`, {
       withCredentials: true,
-      headers: {
-        "Access-Control-Allow-Credentials": "https://sale-square-app.vercel.app/",
-      },
     });
 
     dispatch({

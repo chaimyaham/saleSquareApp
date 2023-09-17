@@ -25,12 +25,7 @@ const ShopLoginPageComponent = () => {
           email,
           password,
         },
-        {
-          withCredentials: true,
-          headers: {
-            "Access-Control-Allow-Credentials": "https://sale-square-app.vercel.app/",
-          },
-        }
+        { withCredentials: true }
       )
       .then((res) => {
         toast.success("Login Success!");

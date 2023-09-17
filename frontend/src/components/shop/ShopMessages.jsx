@@ -49,9 +49,6 @@ const ShopMessages = () => {
           `${server}/conversation/get-all-conversation-seller/${seller?._id}`,
           {
             withCredentials: true,
-            headers: {
-              "Access-Control-Allow-Credentials": "https://sale-square-app.vercel.app/",
-            },
           }
         );
 

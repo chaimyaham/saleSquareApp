@@ -57,11 +57,8 @@ export const deleteEvent = (id) => async (dispatch) => {
         type: "deleteeventRequest",
       })
   
-      const {data} = await axios.delete(`${server}/event/delete-shop-event/${id}`, {
+      const {data} = await axios.delete(`${server}/event/delete-shop-event/${id}`,{
         withCredentials: true,
-        headers: {
-          "Access-Control-Allow-Credentials": "https://sale-square-app.vercel.app/",
-        },
       });
   
       dispatch({

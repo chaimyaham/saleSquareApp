@@ -41,12 +41,7 @@ const AdminSideBar = ({ active}) => {
 
   const logoutHandler = () => {
     axios
-    .get(`${server}/user/logout`,    {
-      withCredentials: true,
-      headers: {
-        "Access-Control-Allow-Credentials": "https://sale-square-app.vercel.app/",
-      },
-    })
+    .get(`${server}/user/logout`, { withCredentials: true })
     .then((res) => {
       toast.success(res.data.message);
       window.location.reload(true);
