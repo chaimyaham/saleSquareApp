@@ -7,12 +7,12 @@ const cors=require('cors');
 // const fileUpload=require("express-fileupload")
 const path = require("path");
 
-app.use(express.json());
-app.use(cookieParser());
 app.use(cors({
     origin: 'https://salesquare-app.vercel.app',
     credentials: true,
 }));
+app.use(express.json());
+app.use(cookieParser());
 app.use("/", express.static(path.join(__dirname,"./uploads")));
 
 app.use("/test",(req,res)=>{

@@ -7,7 +7,7 @@ const DropDown = ({categoriesData,setDropDown}) => {
     const submitHandler = (i)=>{
         navigate(`/products?category=${i.title}`)
         setDropDown(false);
-        window.location.reload();
+        window.location.reload(true);
     }
 
   return (
@@ -15,7 +15,7 @@ const DropDown = ({categoriesData,setDropDown}) => {
             <div className='cursor-pointer flex items-center gap-10 hover:bg-gray-50 p-2'  onClick={()=>{
                 categoriesData=null;
                 navigate('/products')
-                window.location.reload()
+                window.location.reload(true)
             }}>
 
 <BiBorderAll size={25} className='ml-2' />
