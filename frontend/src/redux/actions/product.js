@@ -60,6 +60,9 @@ export const deleteProduct = (id) => async (dispatch) => {
       `${server}/product/delete-shop-product/${id}`,
       {
         withCredentials: true,
+        headers: {
+          "Access-Control-Allow-Credentials": "https://sale-square-app.vercel.app/",
+        },
       }
     );
 

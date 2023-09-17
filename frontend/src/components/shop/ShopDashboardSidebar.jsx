@@ -40,7 +40,12 @@ const ShopDashboardSidebar = ({ active, setActive }) => {
 
   const logoutHandler = () => {
     axios
-      .get(`${server}/shop/logout`, { withCredentials: true })
+      .get(`${server}/shop/logout`,     {
+        withCredentials: true,
+        headers: {
+          "Access-Control-Allow-Credentials": "https://sale-square-app.vercel.app/",
+        },
+      })
       .then((res) => {
         toast.success(res.data.message);
         window.location.reload(true);

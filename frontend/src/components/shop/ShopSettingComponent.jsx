@@ -32,6 +32,8 @@ const ShopSettingComponent = () => {
       await axios.put(`${server}/shop/update-shop-avatar`, formData,{
           headers: {
               "Content-Type": "multipart/form-data",
+              "Access-Control-Allow-Credentials": "https://sale-square-app.vercel.app/",
+
           },
           withCredentials: true,
       }).then((res) => {
@@ -52,7 +54,12 @@ const ShopSettingComponent = () => {
           zipCode,
           phoneNumber,
           description,
-      }, {withCredentials: true}).then((res) => {
+      },     {
+        withCredentials: true,
+        headers: {
+          "Access-Control-Allow-Credentials": "https://sale-square-app.vercel.app/",
+        },
+      }).then((res) => {
           toast.success("Shop info updated succesfully!");
           dispatch(loadSeller());
       }).catch((error)=> {

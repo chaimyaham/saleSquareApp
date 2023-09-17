@@ -55,8 +55,10 @@ const ProfileContent = ({active}) => {
         .put(`${server}/user/update-avatar`, formData, {
           headers: {
             "Content-Type": "multipart/form-data",
+            "Access-Control-Allow-Credentials": "https://sale-square-app.vercel.app/",
           },
           withCredentials: true,
+
         })
         .then((response) => {
            dispatch(loadUser());

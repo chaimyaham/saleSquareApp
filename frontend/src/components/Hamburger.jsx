@@ -27,7 +27,12 @@ const Hamburger = ({ state }) => {
   
   const logoutHandler = () => {
     axios
-      .get(`${server}/user/logout`, { withCredentials: true })
+      .get(`${server}/user/logout`,     {
+        withCredentials: true,
+        headers: {
+          "Access-Control-Allow-Credentials": "https://sale-square-app.vercel.app/",
+        },
+      })
       .then((res) => {
         toast.success(res.data.message);
        

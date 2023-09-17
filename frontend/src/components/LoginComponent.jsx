@@ -14,7 +14,12 @@ const LoginComponent = () => {
 
   const handleSubmit=async(e)=>{
     e.preventDefault();
-    await axios.post(`${server}/user/login-user`,{email,password},{withCredentials:true}).then((res)=>{
+    await axios.post(`${server}/user/login-user`,{email,password},    {
+      withCredentials: true,
+      headers: {
+        "Access-Control-Allow-Credentials": "https://sale-square-app.vercel.app/",
+      },
+    }).then((res)=>{
       toast.success('Login Successfully');
       navigate("/");
       window.location.reload(true)

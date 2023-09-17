@@ -30,7 +30,12 @@ const OrderDetails = () => {
         {
           status,
         },
-        { withCredentials: true }
+        {
+          withCredentials: true,
+          headers: {
+            "Access-Control-Allow-Credentials": "https://sale-square-app.vercel.app/",
+          },
+        }
       )
       .then((res) => {
         toast.success("Order updated!");
@@ -48,7 +53,12 @@ const OrderDetails = () => {
       {
         status,
       },
-      { withCredentials: true }
+      {
+        withCredentials: true,
+        headers: {
+          "Access-Control-Allow-Credentials": "https://sale-square-app.vercel.app/",
+        },
+      }
     )
     .then((res) => {
       toast.success("Order updated!");

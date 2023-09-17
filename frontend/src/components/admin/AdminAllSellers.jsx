@@ -21,7 +21,12 @@ const AdminAllSellers = () => {
   
     const handleDelete = async (id) => {
       await axios
-      .delete(`${server}/shop/delete-seller/${id}`, { withCredentials: true })
+      .delete(`${server}/shop/delete-seller/${id}`,    {
+        withCredentials: true,
+        headers: {
+          "Access-Control-Allow-Credentials": "https://sale-square-app.vercel.app/",
+        },
+      })
       .then((res) => {
         toast.success(res.data.message);
       });
