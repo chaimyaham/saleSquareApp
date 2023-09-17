@@ -32,7 +32,7 @@ const SignUpComponent = () => {
       setEmail('');
       setName('');
       setPassword('');
-      setAvatar(null)
+      setAvatar()
 
 
       if(res.data.success === true){

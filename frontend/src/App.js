@@ -147,7 +147,7 @@ function App() {
         />
 
       <Route
-          path="/dashboard-create-product"
+          path="/dashboard-uct"
           element={
             <SellerProtectedRoute>
               <AddnewProduct />

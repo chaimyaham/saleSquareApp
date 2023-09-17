@@ -62,7 +62,7 @@ export const updateUserInformation =
         {
           withCredentials: true,
           headers: {
-            "Access-Control-Allow-Credentials": true,
+            "Access-Control-Allow-Credentials": "https://sale-square-app.vercel.app/",
           },
         }
       );
