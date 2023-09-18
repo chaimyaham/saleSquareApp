@@ -7,8 +7,8 @@ import { toast } from "react-toastify";
 import "../styles/login.css";
 
 const LoginComponent = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("test55@gmail.com");
+  const [password, setPassword] = useState("12345678");
   const [visible, setVisible] = useState(false);
   const navigate=useNavigate()
 
