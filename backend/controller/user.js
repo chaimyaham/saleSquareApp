@@ -129,8 +129,7 @@ router.get('/getuser',isAuthenticated,catchAsyncErrors(async(req,res,next)=>{
     } catch (error) {
         return next(new ErrorHandler(error.message,500))
     }
-}))
-
+}));
 
 // logOut User
 router.get(
